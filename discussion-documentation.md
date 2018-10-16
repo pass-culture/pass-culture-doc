@@ -47,3 +47,6 @@ Corollaire : S'autoriser de la documentation diminue l'exigence de qualité du c
  
 ### C2 - Les tests fournissent suffisamment de documentation
 
+> DÉVELOPPER / AMANDER ICI LES ARGUMENTS `CONS`
+
+
