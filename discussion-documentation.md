@@ -22,7 +22,9 @@ L'objectif de cette discussion est de déterminer :
 
 ### P1 - Le code doit être utilisable sans connaître les détails d'implémentation
 C'est particulièrement important pour tout ce qui a vocation à être utilisé par d'autres développeurs (autre que l'auteur du code).
+
 Par exemple il n'est pas nécessaire de lire le code source de React ou de Flask pour utiliser ces librairies.
+
 Les commandes unix ont généralement une entrée de `man` associée et/ou une option `--help` (on imagine pas aller lire le code source de `ls` pour connaitre les options disponibles).
 
 
