@@ -38,6 +38,17 @@ Cela permet :
  * de se passer de specifications fonctionnelles plus formelles dans certains cas
 
 
+### P3 - L'écrit est un moyen plus efficace et pérenne que l'oral de transmettre la connaissance
+S'il est vraiment nécessaire d'argumenter sur ce point mieux vaux renvoyer vers [wikipedia](https://fr.wikipedia.org/wiki/%C3%89criture#Impact_culturel)
+
+
+### P4 - Soliciter les collaborateurs les freines 
+Solliciter les collaborateur pose le problème du context switching, attendre qu'il soient disponible n'est pas meilleur pour la productivité
+
+### P5 - Les collaborateurs ne sont pas toujours disponibles
+La majorité des contributeurs sont soit au 4/5ème sur le projet et/ou ont régulièrement des événements qui les prive d'une journée dans la semaine (événements Octo ou Beta.gouv).
+
+
 ## CONS
 
 ### C1 - Le code doit être auto-documenté
