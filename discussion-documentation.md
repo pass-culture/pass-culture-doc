@@ -20,13 +20,13 @@ L'objectif de cette discussion est de déterminer :
 
 ## PROS
 
+
 ### P1 - Le code doit être utilisable sans connaître les détails d'implémentation
 C'est particulièrement important pour tout ce qui a vocation à être utilisé par d'autres développeurs (autre que l'auteur du code).
 
 Par exemple il n'est pas nécessaire de lire le code source de React ou de Flask pour utiliser ces librairies.
 
 Les commandes unix ont généralement une entrée de `man` associée et/ou une option `--help` (on imagine pas aller lire le code source de `ls` pour connaitre les options disponibles).
-
 
 
 ### P2 - La documentation est un contrat d'interface
@@ -45,6 +45,7 @@ S'il est vraiment nécessaire d'argumenter sur ce point mieux vaux renvoyer vers
 ### P4 - Soliciter les collaborateurs les freines 
 Solliciter les collaborateur pose le problème du context switching, attendre qu'il soient disponible n'est pas meilleur pour la productivité
 
+
 ### P5 - Les collaborateurs ne sont pas toujours disponibles
 La majorité des contributeurs sont soit au 4/5ème sur le projet et/ou ont régulièrement des événements qui les prive d'une journée dans la semaine (événements Octo ou Beta.gouv).
 
@@ -58,3 +59,30 @@ Corollaire : S'autoriser de la documentation diminue l'exigence de qualité du c
  
 ### C2 - Les tests fournissent suffisamment de documentation
 
+Les tests sont une documentation, mais elle ne saurait être complète ou suffisante pour un nouvel arrivant sur le projet, ou simplement pour quelqu'un qui n'a pas encore manipulé le code dans son ensemble.
+Ceci, des tests situés au bon niveau d'abstraction peuvent être très utiles : des tests de routes me renseignements sur les différents status codes, payloads et responses auxquels je peux m'attendre.
+Ils constituent donc une documentation exécutable.
+
+
+### C3 - La documentation, comme les commentaires, a tendance a vieillir plus mal que le code
+
+La documenation, comme les commentaires, constitue une méta-donnée sur le code.
+Le problème est qu'on ne dispose d'aucun mécanisme qui permettre de dire si la documentation est correcte, au contraire du code qui dispose des tests automatisés pour cela.
+L'erreur est humaine, et ainsi, si une documentation n'est pas mise à jour et qu'on ne s'en aperçoit pas, on a un décalage entre ce que le code fait, et ce que le commentaire / la doc dit que le code fait.
+En fin de compte, pour être sûr, on finit toujours par aller voir le code.
+
+
+### C4 - La documentation complète n'existe pas
+
+Il est extrêmement difficile de représenter l'entiereté d'un système d'information. Au mieux, on ne peut en réprésenter que des vues abstraites et incomplètes :
+    + une vue du modèle de donnée
+    + une vue sur les fonctionnalités du point de vue des utilisateurs
+    + les différents utilisateurs (personas)
+    + la structure du code
+    + une vue des flux de données entre le système et ses systèmes partenaires
+    + une vue d'architecture applicative
+    + une vue d'infrastructure logique
+    + une vue d'infrastructure technique
+    + etc.
+
+Tous ces aspects du SI ne changent pas au même rythme.
