@@ -69,7 +69,7 @@ Ceci, des tests situés au bon niveau d'abstraction peuvent être très utiles :
 Ils constituent donc une documentation exécutable.
 
 
-### C3 - La documentation, comme les commentaires, a tendance a vieillir plus mal que le code
+### C5 - La documentation, comme les commentaires, a tendance a vieillir plus mal que le code
 
 La documenation, comme les commentaires, constitue une méta-donnée sur le code.
 Le problème est qu'on ne dispose d'aucun mécanisme qui permettre de dire si la documentation est correcte, au contraire du code qui dispose des tests automatisés pour cela.
@@ -77,7 +77,7 @@ L'erreur est humaine, et ainsi, si une documentation n'est pas mise à jour et q
 En fin de compte, pour être sûr, on finit toujours par aller voir le code.
 
 
-### C4 - La documentation complète n'existe pas
+### C6 - La documentation complète n'existe pas
 
 Il est extrêmement difficile de représenter l'entiereté d'un système d'information. Au mieux, on ne peut en réprésenter que des vues abstraites et incomplètes :
     + une vue du modèle de donnée
