@@ -42,7 +42,7 @@ Cela permet :
 S'il est vraiment nécessaire d'argumenter sur ce point mieux vaux renvoyer vers [wikipedia](https://fr.wikipedia.org/wiki/%C3%89criture#Impact_culturel)
 
 
-### P4 - Soliciter les collaborateurs les freines 
+### P4 - Soliciter les collaborateurs les freine
 Solliciter les collaborateur pose le problème du context switching, attendre qu'il soient disponible n'est pas meilleur pour la productivité
 
 
@@ -56,8 +56,13 @@ La majorité des contributeurs sont soit au 4/5ème sur le projet et/ou ont rég
 Le code doit être écrit (découpage, nommage) de manière suffisamment claire pour ne pas nécessiter de documentation.
 Corollaire : S'autoriser de la documentation diminue l'exigence de qualité du code.
  
- 
-### C2 - Les tests fournissent suffisamment de documentation
+### C2 - Les tests doivent fournir suffisamment de documentation
+
+### C3 - Mettre à jour la documentation est couteux
+
+Et redondant avec le travail fait pour l'écriture des tests
+
+### C4 - Solliciter les autres peut permettre de partager plus que ce que contiendrait la documentation
 
 Les tests sont une documentation, mais elle ne saurait être complète ou suffisante pour un nouvel arrivant sur le projet, ou simplement pour quelqu'un qui n'a pas encore manipulé le code dans son ensemble.
 Ceci, des tests situés au bon niveau d'abstraction peuvent être très utiles : des tests de routes me renseignements sur les différents status codes, payloads et responses auxquels je peux m'attendre.
