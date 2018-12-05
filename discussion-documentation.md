@@ -26,14 +26,14 @@ C'est particulièrement important pour tout ce qui a vocation à être utilisé 
 
 Par exemple il n'est pas nécessaire de lire le code source de React ou de Flask pour utiliser ces librairies.
 
-Les commandes unix ont généralement une entrée de `man` associée et/ou une option `--help` (on imagine pas aller lire le code source de `ls` pour connaitre les options disponibles).
+Les commandes unix ont généralement une entrée de `man` associée et/ou une option `--help` (on n'imagine pas aller lire le code source de `ls` pour connaitre les options disponibles).
 
 
 ### P2 - La documentation est un contrat d'interface
 Écrire la documentation devrait être un préalable au développement, de la même manière qu'on parle de TDD, on pourrait parler de Documentation Driven Dev. ou Documentation First pour les APIs, c'est un peu l'idée derrière [OpenAPI/Swagger](https://www.openapis.org/).
 Cela permet :
  * lors de la conception, de se concentrer sur la cohérence de l'API (nommages, arguments) 
- * d'avoir un **contrat d'interface** que le code devra honorer tout au long de sa vie (au moins pour une version majeure donnée) et ce, peut importe les détails d'implémentation interne.
+ * d'avoir un **contrat d'interface** que le code devra honorer tout au long de sa vie (au moins pour une version majeure donnée) et ce, peu importe les détails d'implémentation interne.
  * le développement de programmes clients sans attendre la fin du développement d'un service.
  * de se passer de specifications fonctionnelles plus formelles dans certains cas
 
@@ -57,6 +57,7 @@ Le code doit être écrit (découpage, nommage) de manière suffisamment claire 
 Corollaire : S'autoriser de la documentation diminue l'exigence de qualité du code.
  
 ### C2 - Les tests doivent fournir suffisamment de documentation
+Il s'agit d'une documentation qui est bien à jour (sinon les tests seraient rouges). Un effort pourrait cependant être fait pour améliorer le nommage et ordonner les fichiers de tests pour une lecture plus aisée. 
 
 ### C3 - Mettre à jour la documentation est couteux
 
@@ -69,7 +70,7 @@ Ceci, des tests situés au bon niveau d'abstraction peuvent être très utiles :
 Ils constituent donc une documentation exécutable.
 
 
-### C5 - La documentation, comme les commentaires, a tendance a vieillir plus mal que le code
+### C5 - La documentation, comme les commentaires, a tendance à vieillir plus mal que le code
 
 La documenation, comme les commentaires, constitue une méta-donnée sur le code.
 Le problème est qu'on ne dispose d'aucun mécanisme qui permettre de dire si la documentation est correcte, au contraire du code qui dispose des tests automatisés pour cela.
@@ -79,7 +80,7 @@ En fin de compte, pour être sûr, on finit toujours par aller voir le code.
 
 ### C6 - La documentation complète n'existe pas
 
-Il est extrêmement difficile de représenter l'entiereté d'un système d'information. Au mieux, on ne peut en réprésenter que des vues abstraites et incomplètes :
+Il est extrêmement difficile de représenter l'entiereté d'un système d'information. Au mieux, on ne peut en représenter que des vues abstraites et incomplètes :
     + une vue du modèle de donnée
     + une vue sur les fonctionnalités du point de vue des utilisateurs
     + les différents utilisateurs (personas)
@@ -91,3 +92,9 @@ Il est extrêmement difficile de représenter l'entiereté d'un système d'infor
     + etc.
 
 Tous ces aspects du SI ne changent pas au même rythme.
+
+### C7 - Il est plus compliqué d'expliquer clairement le fonctionnement du code par du texte qu'avec des tests ou à l'oral
+
++ Il est compliqué de trouver le niveau d'abstraction et de technicité adéquat à l'explication du code, notamment parce que cela dépend fortement de la personne qui est en face. Un développeur du projet n'aura pas les mêmes besoins qu'un développeur externe, un PO, un testeur... À qui s'adresserait-on à travers cette documentation ? Combien de versions différentes faudrait-il produire ?
++ On explique des fonctionnalités complexes plus aisément avec des dessins et des exemples qu'avec des phrases
++ Pour les parties du code qui sont le moins compréhensibles, la documentation ne sera probablement pas suffisante et demander à quelqu'un de l'équipe sera certainement plus facile
